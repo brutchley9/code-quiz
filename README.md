@@ -14,7 +14,7 @@ Follow link https://github.com/brutchley9/code-quiz to access GitHub repository 
 
 # Resources
 
-<li></li>
+<li>https://www.w3schools.com/js/js_timing.asp</li>
 
 <li></li>
 

@@ -1,0 +1,13 @@
+header {
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+}

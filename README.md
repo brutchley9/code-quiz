@@ -1,6 +1,6 @@
 # Code Quiz
 
-// challenge description //
+For this challenge, I will be creating my own coding quiz for self reference, in order to stay fresh on fundamentals in HTML/CSS/JS. In order to do this, I will make a webpage that renders a series of questions activated by a start button, a 60 second timer, and a name entry field to save my score.
 
 Screenshot of webpage:
 <img src="">
@@ -18,4 +18,4 @@ Follow link https://github.com/brutchley9/code-quiz to access GitHub repository 
 
 <li>https://www.w3schools.com/tags/tag_button.asp</li>
 
-<li></li>
+<li>https://www.w3schools.com/jsref/event_onclick.asp</li>

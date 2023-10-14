@@ -19,3 +19,5 @@ Follow link https://github.com/brutchley9/code-quiz to access GitHub repository 
 <li>https://www.w3schools.com/tags/tag_button.asp</li>
 
 <li>https://www.w3schools.com/jsref/event_onclick.asp</li>
+
+<li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</li>

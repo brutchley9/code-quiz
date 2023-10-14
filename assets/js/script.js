@@ -22,3 +22,11 @@ function setTime() {
 function sendMessage() {
     timeEl.textContent = "Time's Up!"
 }
+
+//questions will be presented with an array of objects within let declarations
+
+let questionOne = {
+    first: "debugging",
+    firstSelections: ["JavaScript", "Terminal", "Console.log", "for loops"],
+    firstRight: 2
+}

@@ -23,7 +23,7 @@ function sendMessage() {
     timeEl.textContent = "Time's Up!"
 }
 
-//questions will be presented with an array of objects within let declarations
+//questions will be presented as an array of objects within let declarations. Correct object within each array is labeled with its corresponding location within array (0, 1, 2, 3)
 
 let questionOne = {
     first: "debugging",

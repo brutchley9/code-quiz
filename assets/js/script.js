@@ -27,6 +27,30 @@ function sendMessage() {
 
 let questionOne = {
     first: "debugging",
-    firstSelections: ["JavaScript", "Terminal", "Console.log", "for loops"],
+    firstSelections: ["JavaScript", "Terminal", "Console.log", "For Loops"],
     firstRight: 2
+}
+
+let questionTwo = {
+    second: "string",
+    secondSelections: ["Commas", "Curly Brackets", "Quotes", "Parentheses"],
+    secondRight: 2
+}
+
+let questionThree = {
+    third: "data",
+    thirdSelections: ["String", "Alerts", "Boolean", "Numbers"],
+    thirdRight: 1
+}
+
+let questionFour = {
+    fourth: "arrays",
+    fourthSelections: ["Numbers/Strings", "Other Arrays", "Booleans", "All of the Above"],
+    fourthRight: 3
+}
+
+let questionFive = {
+    fifth: "lotr",
+    fifthSelections: ["The Fellowship of the Ring", "The Two Towers", "The Return of the King", "All of the Above"],
+    fifthRight: 3
 }

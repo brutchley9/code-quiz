@@ -1,7 +1,7 @@
 var timeEl = document.querySelector(".time");
 var mainEl = document.getElementById("main");
 
-var secondsleft = 60
+var secondsleft = 45
 
 //function for 60sec timer, activated when button on webpage is clicked
 

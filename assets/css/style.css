@@ -19,6 +19,7 @@ header {
 }
 
 h1 {
+    color: darkblue;
     font-size: 200%;
     padding-bottom: 1%;
     border: 5px;
@@ -37,6 +38,8 @@ ul {
 
 li {
     list-style: none;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
@@ -45,4 +48,34 @@ button {
     background-color: darkblue;
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
+}
+
+#first {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#second {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#third {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#fourth {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkblue;
+}
+
+#fifth {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: darkblue;
 }

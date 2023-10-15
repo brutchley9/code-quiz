@@ -57,7 +57,83 @@ let questionFive = {
 }
 
 
+function beginQuestionFive(questionFive) {
 
+    let fifthQuestion = document.getElementById("fifth");
+
+    fifthQuestion.textContent = questionFive.fifth
+
+    let fifthSelect = document.querySelectorAll(".fifthSelections")
+    fifthSelect.forEach(function(element, index){
+        element.textContent = questionFive.fifthSelections[index]
+
+        element.addEventListener('click', function() {
+            if(questionFive.fifthRight == index) {
+                console.log("Right!")
+
+            }
+            else {
+                console.log("Wrong!")
+            }
+        })
+    })
+
+
+}
+
+function beginQuestionFour(questionFour) {
+
+    let fourthQuestion = document.getElementById("fourth");
+
+    fourthQuestion.textContent = questionFourth.fourth
+
+    let fourthSelect = document.querySelectorAll(".fourthSelections")
+    fourthSelect.forEach(function(element, index){
+        element.textContent = questionFour.fourthSelections[index]
+
+        element.addEventListener('click', function() {
+            if(questionFour.fourthRight == index) {
+                console.log("Right!")
+                beginQuestionFive(questionFive)
+
+            }
+            else {
+                console.log("Wrong!")
+                beginQuestionFive(questionFive)
+            }
+        })
+    })
+
+
+}
+
+
+
+function beginQuestionThree(questionThree) {
+
+    let thirdQuestion = document.getElementById("third");
+
+    thirdQuestion.textContent = questionThree.third
+
+    let thirdSelect = document.querySelectorAll(".thirdSelections")
+    thirdSelect.forEach(function(element, index){
+        element.textContent = questionThree.thirdSelections[index]
+
+        element.addEventListener('click', function() {
+            if(questionThree.thirdRight == index) {
+                console.log("Right!")
+                beginQuestionFour(questionFour)
+
+            }
+            else {
+                console.log("Wrong!")
+                beginQuestionFour(questionFour)
+            }
+        })
+    })
+
+
+}
 
 function beginQuestionTwo(questionTwo) {
 
@@ -72,10 +148,12 @@ function beginQuestionTwo(questionTwo) {
         element.addEventListener('click', function() {
             if(questionTwo.secondRight == index) {
                 console.log("Right!")
+                beginQuestionThree(questionThree)
 
             }
             else {
                 console.log("Wrong!")
+                beginQuestionThree(questionThree)
             }
         })
     })

@@ -24,12 +24,24 @@ function sendMessage() {
 }
 
 //questions will be presented as an array of objects within let declarations. Correct object within each array is labeled with its corresponding location within array (0, 1, 2, 3)
+//next step, to add a corresponding function for each question, as well as an "onclick" to make them interactive
 
 let questionOne = {
     first: "debugging",
     firstSelections: ["JavaScript", "Terminal", "Console.log", "For Loops"],
     firstRight: 2
 }
+
+function beginQuestionOne(questionOne) {
+
+    let firstQuestion = document.getElementById("first");
+
+    firstQuestion.textContent = questionOne.first
+
+
+}
+
+beginQuestionOne(questionOne)
 
 let questionTwo = {
     second: "string",

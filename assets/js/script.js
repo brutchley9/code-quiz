@@ -27,7 +27,7 @@ function sendMessage() {
 //next step, to add a corresponding function for each question, as well as an "onclick" to make them interactive
 
 let questionOne = {
-    first: "A very useful tool used during web development and debugging for printing content to the debugger is:",
+    first: "A very useful tool used during web development and debugging for printing cont'firstent to the debugger is:",
     firstSelections: ["JavaScript", "Terminal", "Console.log", "For Loops"],
     firstRight: 2
 }
@@ -43,8 +43,6 @@ function beginQuestionOne(questionOne) {
         element.textContent = questionOne.firstSelections[index]
     })
 }
-
-beginQuestionOne(questionOne)
 
 let questionTwo = {
     second: "string",

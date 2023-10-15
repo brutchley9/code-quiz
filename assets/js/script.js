@@ -95,6 +95,7 @@ function beginQuestionFour(questionFour) {
         element.addEventListener('click', function() {
             if(questionFour.fourthRight == index) {
                 console.log("Right!")
+                document.getElementById("fifth").scrollIntoView({behavior: "smooth"});
                 beginQuestionFive(questionFive)
 
             }
@@ -123,6 +124,7 @@ function beginQuestionThree(questionThree) {
         element.addEventListener('click', function() {
             if(questionThree.thirdRight == index) {
                 console.log("Right!")
+                document.getElementById("fourth").scrollIntoView({behavior: "smooth"});
                 beginQuestionFour(questionFour)
 
             }
@@ -149,6 +151,7 @@ function beginQuestionTwo(questionTwo) {
         element.addEventListener('click', function() {
             if(questionTwo.secondRight == index) {
                 console.log("Right!")
+                document.getElementById("third").scrollIntoView({behavior: "smooth"});
                 beginQuestionThree(questionThree)
 
             }
@@ -175,6 +178,7 @@ function beginQuestionOne(questionOne) {
         element.addEventListener('click', function() {
             if(questionOne.firstRight == index) {
                 console.log("Right!")
+                document.getElementById("second").scrollIntoView({behavior: "smooth"});
                 beginQuestionTwo(questionTwo)
             }
             else {

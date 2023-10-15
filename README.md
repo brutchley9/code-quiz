@@ -34,6 +34,6 @@ Follow link https://github.com/brutchley9/code-quiz to access GitHub repository 
 
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</li>
 
-<li></li>
+<li>https://stackoverflow.com/questions/3569329/javascript-to-make-the-page-jump-to-a-specific-location</li>
 
 <li></li>

@@ -32,29 +32,8 @@ let questionOne = {
     firstRight: 2
 }
 
-function beginQuestionOne(questionOne) {
-
-    let firstQuestion = document.getElementById("first");
-
-    firstQuestion.textContent = questionOne.first
-
-    let firstSelect = document.querySelectorAll(".firstSelections")
-    firstSelect.forEach(function(element, index){
-        element.textContent = questionOne.firstSelections[index]
-
-        element.addEventListener('click', function() {
-            if(questionOne.firstRight == index) {
-                console.log("Right!")
-            }
-            else {
-                console.log("Wrong!")
-            }
-        })
-    })
-}
-
 let questionTwo = {
-    second: "string",
+    second: "String values must be enclosed within ______ when being assigned to variables",
     secondSelections: ["Commas", "Curly Brackets", "Quotes", "Parentheses"],
     secondRight: 2
 }
@@ -76,3 +55,54 @@ let questionFive = {
     fifthSelections: ["The Fellowship of the Ring", "The Two Towers", "The Return of the King", "All of the Above"],
     fifthRight: 3
 }
+
+
+
+
+function beginQuestionTwo(questionTwo) {
+
+    let secondQuestion = document.getElementById("second");
+
+    secondQuestion.textContent = questionTwo.second
+
+    let secondSelect = document.querySelectorAll(".secondSelections")
+    secondSelect.forEach(function(element, index){
+        element.textContent = questionTwo.secondSelections[index]
+
+        element.addEventListener('click', function() {
+            if(questionTwo.secondRight == index) {
+                console.log("Right!")
+
+            }
+            else {
+                console.log("Wrong!")
+            }
+        })
+    })
+
+
+}
+
+function beginQuestionOne(questionOne) {
+
+    let firstQuestion = document.getElementById("first");
+
+    firstQuestion.textContent = questionOne.first
+
+    let firstSelect = document.querySelectorAll(".firstSelections")
+    firstSelect.forEach(function(element, index){
+        element.textContent = questionOne.firstSelections[index]
+
+        element.addEventListener('click', function() {
+            if(questionOne.firstRight == index) {
+                console.log("Right!")
+                beginQuestionTwo(questionTwo)
+            }
+            else {
+                console.log("Wrong!")
+                beginQuestionTwo(questionTwo)
+            }
+        })
+    })
+}
+

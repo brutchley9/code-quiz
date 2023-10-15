@@ -102,6 +102,7 @@ function beginQuestionFour(questionFour) {
             else {
                 console.log("Wrong!")
                 beginQuestionFive(questionFive)
+                secondsleft -= 5
             }
         })
     })
@@ -131,6 +132,7 @@ function beginQuestionThree(questionThree) {
             else {
                 console.log("Wrong!")
                 beginQuestionFour(questionFour)
+                secondsleft -= 5
             }
         })
     })
@@ -158,6 +160,7 @@ function beginQuestionTwo(questionTwo) {
             else {
                 console.log("Wrong!")
                 beginQuestionThree(questionThree)
+                secondsleft -= 5
             }
         })
     })
@@ -184,6 +187,7 @@ function beginQuestionOne(questionOne) {
             else {
                 console.log("Wrong!")
                 beginQuestionTwo(questionTwo)
+                secondsleft -= 5
             }
         })
     })

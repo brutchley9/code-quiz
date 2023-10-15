@@ -36,4 +36,4 @@ Follow link https://github.com/brutchley9/code-quiz to access GitHub repository 
 
 <li>https://stackoverflow.com/questions/3569329/javascript-to-make-the-page-jump-to-a-specific-location</li>
 
-<li></li>
+<li>https://stackoverflow.com/questions/55583960/how-do-i-add-or-subtract-current-seconds-to-a-count-down-timer</li>

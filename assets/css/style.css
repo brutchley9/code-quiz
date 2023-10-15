@@ -11,3 +11,9 @@ h1 {
     border-color: black;
     border-style: solid;
 }
+
+ul {
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+}

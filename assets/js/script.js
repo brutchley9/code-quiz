@@ -39,23 +39,24 @@ let questionTwo = {
 }
 
 let questionThree = {
-    third: "data",
+    third: "Commonly used data types do NOT include:",
     thirdSelections: ["String", "Alerts", "Boolean", "Numbers"],
     thirdRight: 1
 }
 
 let questionFour = {
-    fourth: "arrays",
+    fourth: "Arrays in JavaScript can be used to store:",
     fourthSelections: ["Numbers/Strings", "Other Arrays", "Booleans", "All of the Above"],
     fourthRight: 3
 }
 
 let questionFive = {
-    fifth: "lotr",
+    fifth: "The greatest film in the Peter Jackson 'Lord of the Rings' Trilogy is:",
     fifthSelections: ["The Fellowship of the Ring", "The Two Towers", "The Return of the King", "All of the Above"],
     fifthRight: 3
 }
 
+//down below is a function for each corresponding question. The first begins when the start button is clicked (onclick event in index), then each subsequent question begins when the one before it is answered (right or wrong)
 
 function beginQuestionFive(questionFive) {
 
@@ -85,7 +86,7 @@ function beginQuestionFour(questionFour) {
 
     let fourthQuestion = document.getElementById("fourth");
 
-    fourthQuestion.textContent = questionFourth.fourth
+    fourthQuestion.textContent = questionFour.fourth
 
     let fourthSelect = document.querySelectorAll(".fourthSelections")
     fourthSelect.forEach(function(element, index){

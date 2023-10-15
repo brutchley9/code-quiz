@@ -20,6 +20,10 @@ Follow link https://github.com/brutchley9/code-quiz to access GitHub repository 
 
 <li>https://www.w3schools.com/jsref/event_onclick.asp</li>
 
+<li>https://academy.zenva.com/product-category/all/web-development/javascript/</li>
+
+<li>https://exercism.org/tracks/javascript</li>
+
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let</li>
 
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</li>
@@ -29,5 +33,7 @@ Follow link https://github.com/brutchley9/code-quiz to access GitHub repository 
 <li>https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</li>
 
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</li>
+
+<li></li>
 
 <li></li>

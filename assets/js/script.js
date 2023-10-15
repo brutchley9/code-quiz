@@ -27,7 +27,7 @@ function sendMessage() {
 //next step, to add a corresponding function for each question, as well as an "onclick" to make them interactive
 
 let questionOne = {
-    first: "debugging",
+    first: "A very useful tool used during web development and debugging for printing content to the debugger is:",
     firstSelections: ["JavaScript", "Terminal", "Console.log", "For Loops"],
     firstRight: 2
 }
@@ -38,7 +38,10 @@ function beginQuestionOne(questionOne) {
 
     firstQuestion.textContent = questionOne.first
 
-
+    let firstSelect = document.querySelectorAll(".firstSelections")
+    firstSelect.forEach(function(element, index){
+        element.textContent = questionOne.firstSelections[index]
+    })
 }
 
 beginQuestionOne(questionOne)

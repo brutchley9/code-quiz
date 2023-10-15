@@ -25,3 +25,9 @@ Follow link https://github.com/brutchley9/code-quiz to access GitHub repository 
 <li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array</li>
 
 <li>https://www.w3schools.com/jsref/jsref_foreach.asp</li>
+
+<li>https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</li>
+
+<li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else</li>
+
+<li></li>

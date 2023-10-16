@@ -24,7 +24,8 @@ function sendMessage() {
 }
 
 function sendEndMessage() {
-    timeEl.textContent = "Quiz Over!"
+    clearInterval(timerInterval);
+    timeEl.textContent = "Quiz Over!";
 }
 
 //questions will be presented as an array of objects within let declarations. Correct object within each array is labeled with its corresponding location within array (0, 1, 2, 3)
@@ -60,7 +61,8 @@ let questionFive = {
     fifthRight: 3
 }
 
-//down below is a function for each corresponding question. The first begins when the start button is clicked (onclick event in index), then each subsequent question begins when the one before it is answered (right or wrong)
+//down below is a function for each corresponding question. The first begins when the start button is clicked (onclick event in index), then each subsequent question begins when the one before it is answered (right or wrong).
+//Correct/Incorrect answers saved in console.log
 
 function beginQuestionFive(questionFive) {
 
@@ -75,16 +77,12 @@ function beginQuestionFive(questionFive) {
         element.addEventListener('click', function() {
             if(questionFive.fifthRight == index) {
                 console.log("Right!");
-
-                clearInterval(timerInterval);
-                sendEndMessage();
+                sendEndMessage(timeEl);
 
             }
             else {
                 console.log("Wrong!");
-
-                clearInterval(timerInterval);
-                sendEndMessage();
+                sendEndMessage(timeEl);
             }
         })
     })

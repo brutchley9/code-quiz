@@ -37,9 +37,15 @@ ul {
 }
 
 li {
+    text-align: center;
     list-style: none;
     color: darkblue;
     font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+li:hover {
+    color: crimson;
 }
 
 button {
@@ -48,33 +54,39 @@ button {
     background-color: darkblue;
     font-family: Arial, Helvetica, sans-serif;
     color: azure;
+    cursor: pointer;
 }
 
 #first {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: darkblue;
 }
 
 #second {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: darkblue;
 }
 
 #third {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: darkblue;
 }
 
 #fourth {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: darkblue;
 }
 
 #fifth {
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: darkblue;

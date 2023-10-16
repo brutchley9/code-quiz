@@ -23,6 +23,10 @@ function sendMessage() {
     timeEl.textContent = "Time's Up!"
 }
 
+function sendEndMessage() {
+    timeEl.textContent = "Quiz Over!"
+}
+
 //questions will be presented as an array of objects within let declarations. Correct object within each array is labeled with its corresponding location within array (0, 1, 2, 3)
 //next step, to add a corresponding function for each question, as well as an "onclick" to make them interactive
 
@@ -70,11 +74,17 @@ function beginQuestionFive(questionFive) {
 
         element.addEventListener('click', function() {
             if(questionFive.fifthRight == index) {
-                console.log("Right!")
+                console.log("Right!");
+
+                clearInterval(timerInterval);
+                sendEndMessage();
 
             }
             else {
-                console.log("Wrong!")
+                console.log("Wrong!");
+
+                clearInterval(timerInterval);
+                sendEndMessage();
             }
         })
     })
@@ -94,15 +104,16 @@ function beginQuestionFour(questionFour) {
 
         element.addEventListener('click', function() {
             if(questionFour.fourthRight == index) {
-                console.log("Right!")
+                console.log("Right!");
+                beginQuestionFive(questionFive);
                 document.getElementById("fifth").scrollIntoView({behavior: "smooth"});
-                beginQuestionFive(questionFive)
 
             }
             else {
-                console.log("Wrong!")
-                beginQuestionFive(questionFive)
-                secondsleft -= 5
+                console.log("Wrong!");
+                beginQuestionFive(questionFive);
+                document.getElementById("fifth").scrollIntoView({behavior: "smooth"});
+                secondsleft -= 5;
             }
         })
     })
@@ -124,15 +135,16 @@ function beginQuestionThree(questionThree) {
 
         element.addEventListener('click', function() {
             if(questionThree.thirdRight == index) {
-                console.log("Right!")
+                console.log("Right!");
+                beginQuestionFour(questionFour);
                 document.getElementById("fourth").scrollIntoView({behavior: "smooth"});
-                beginQuestionFour(questionFour)
 
             }
             else {
-                console.log("Wrong!")
-                beginQuestionFour(questionFour)
-                secondsleft -= 5
+                console.log("Wrong!");
+                beginQuestionFour(questionFour);
+                document.getElementById("fourth").scrollIntoView({behavior: "smooth"});
+                secondsleft -= 5;
             }
         })
     })
@@ -152,14 +164,15 @@ function beginQuestionTwo(questionTwo) {
 
         element.addEventListener('click', function() {
             if(questionTwo.secondRight == index) {
-                console.log("Right!")
+                console.log("Right!");
+                beginQuestionThree(questionThree);
                 document.getElementById("third").scrollIntoView({behavior: "smooth"});
-                beginQuestionThree(questionThree)
 
             }
             else {
-                console.log("Wrong!")
-                beginQuestionThree(questionThree)
+                console.log("Wrong!");
+                beginQuestionThree(questionThree);
+                document.getElementById("third").scrollIntoView({behavior: "smooth"});
                 secondsleft -= 5
             }
         })
@@ -180,13 +193,14 @@ function beginQuestionOne(questionOne) {
 
         element.addEventListener('click', function() {
             if(questionOne.firstRight == index) {
-                console.log("Right!")
+                console.log("Right!");
+                beginQuestionTwo(questionTwo);
                 document.getElementById("second").scrollIntoView({behavior: "smooth"});
-                beginQuestionTwo(questionTwo)
             }
             else {
-                console.log("Wrong!")
-                beginQuestionTwo(questionTwo)
+                console.log("Wrong!");
+                beginQuestionTwo(questionTwo);
+                document.getElementById("second").scrollIntoView({behavior: "smooth"});
                 secondsleft -= 5
             }
         })

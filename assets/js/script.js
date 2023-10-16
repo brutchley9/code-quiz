@@ -24,8 +24,6 @@ function sendMessage() {
 }
 
 function sendEndMessage() {
-    clearInterval(timerInterval);
-    timeEl.textContent = "Quiz Over!";
 }
 
 //questions will be presented as an array of objects within let declarations. Correct object within each array is labeled with its corresponding location within array (0, 1, 2, 3)
@@ -77,12 +75,14 @@ function beginQuestionFive(questionFive) {
         element.addEventListener('click', function() {
             if(questionFive.fifthRight == index) {
                 console.log("Right!");
-                sendEndMessage(timeEl);
+                sendEndMessage();
+                document.getElementById("score").scrollIntoView({behavior: "smooth"});
 
             }
             else {
                 console.log("Wrong!");
-                sendEndMessage(timeEl);
+                sendEndMessage();
+                document.getElementById("score").scrollIntoView({behavior: "smooth"});
             }
         })
     })

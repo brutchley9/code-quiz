@@ -3,7 +3,7 @@
 For this challenge, I will be creating my own coding quiz for self reference, in order to stay fresh on fundamentals in HTML/CSS/JS. In order to do this, I will make a webpage that renders a series of questions activated by a start button, a 60 second timer, and a name entry field to save my score.
 
 Screenshot of webpage:
-<img src="">
+<img src="assets/images/Screenshot 2023-10-16 212529.png">
 ---
 
 Follow link https://brutchley9.github.io/code-quiz/ to access this website!

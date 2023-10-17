@@ -4,9 +4,13 @@ var mainEl = document.getElementById("main");
 var secondsleft = 45
 
 //function for 60sec timer, activated when button on webpage is clicked
+//try to move var timerInterval "global" instead of within setTime function
+
+var timerInterval;
+
 
 function setTime() {
-    var timerInterval = setInterval(function() {
+    timerInterval = setInterval(function() {
         secondsleft--;
         timeEl.textContent = secondsleft + " seconds left!"
         if (secondsleft === 0) {
@@ -24,6 +28,8 @@ function sendMessage() {
 }
 
 function sendEndMessage() {
+    clearInterval(timerInterval);
+    timeEl.textContent = "Quiz Over!"
 }
 
 //questions will be presented as an array of objects within let declarations. Correct object within each array is labeled with its corresponding location within array (0, 1, 2, 3)
